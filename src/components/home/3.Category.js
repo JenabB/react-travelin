@@ -8,7 +8,7 @@ const Category = () => {
       style={{ maxWidth: "400px" }}
     >
       {categories.categories.map((c, i) => (
-        <div className="mx-3 mt-4 text-center">
+        <div className="mx-3 mt-4 text-center" key={i}>
           <div
             className="bg-blue-400 mx-auto rounded-full"
             style={{ width: "50px", height: "50px" }}

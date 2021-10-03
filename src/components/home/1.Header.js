@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [location, setLocation] = useState(null);
@@ -26,8 +27,12 @@ const Header = () => {
         )}
       </div>
       <div>
-        <h1 className="material-icons mx-2 text-gray-400">notifications</h1>
-        <h1 className="material-icons">account_circle</h1>
+        <Link to="notifications">
+          <h1 className="material-icons mx-2 text-gray-400">notifications</h1>
+        </Link>
+        <Link to="account">
+          <h1 className="material-icons">account_circle</h1>
+        </Link>
       </div>
     </div>
   );

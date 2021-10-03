@@ -6,7 +6,7 @@ import Popular from "../components/home/4.Popular";
 
 const Home = () => {
   return (
-    <div>
+    <div className="pb-20">
       <Header />
       <Hero />
       <Category />
